@@ -216,20 +216,26 @@ nav{
 .road-to-final img{
     border-top:20px solid gray;
     border-bottom:20px solid gray;
-    animation: final 5s linear   infinite alternate;
+    border-radius: 50px 0px 50px 0px;
+    animation: final 10s linear   infinite alternate;
   }
   
   @keyframes final {
     20% {border-top:20px solid #2D25A0;
-        border-bottom:20px solid #2D25A0;}
+        border-bottom:20px solid #2D25A0;
+        border-radius: 50px 0px 50px 0px;}
     40% {border-top:20px solid rgb(3, 117, 28);
-        border-bottom:20px solid rgb(3, 117, 28);}
+        border-bottom:20px solid rgb(3, 117, 28);
+        border-radius: 0px 50px 0px 50px;}
     60% {border-top:20px solid #07b4c0;
-        border-bottom:20px solid #07b4c0;}
+        border-bottom:20px solid #07b4c0;
+        border-radius: 50px 0px 50px 0px;}
     80% {border-top:20px solid rgb(221, 224, 19);
-        border-bottom:20px solid rgb(221, 224, 19)}
+        border-bottom:20px solid rgb(221, 224, 19);
+        border-radius: 0px 50px 0px 50px;}
     100% {border-top:20px solid #c7054f;
-        border-bottom:20px solid #c7054f;}
+        border-bottom:20px solid #c7054f;
+        border-radius: 50px 0px 50px 0px;}
     
   }
 /*
