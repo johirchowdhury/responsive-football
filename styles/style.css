@@ -205,6 +205,38 @@ nav{
     border-radius: 50%;
     margin:10px;
 }
+/* Road To Final Section */
+.road-to-final{
+    padding: 20px;
+}
+.road-to-final img{
+    width: 100%;
+    height: 100%;
+}
+.road-to-final img{
+    border-top:20px solid gray;
+    border-bottom:20px solid gray;
+    animation: final 5s linear   infinite alternate;
+  }
+  
+  @keyframes final {
+    20% {border-top:20px solid #2D25A0;
+        border-bottom:20px solid #2D25A0;}
+    40% {border-top:20px solid rgb(3, 117, 28);
+        border-bottom:20px solid rgb(3, 117, 28);}
+    60% {border-top:20px solid #07b4c0;
+        border-bottom:20px solid #07b4c0;}
+    80% {border-top:20px solid rgb(221, 224, 19);
+        border-bottom:20px solid rgb(221, 224, 19)}
+    100% {border-top:20px solid #c7054f;
+        border-bottom:20px solid #c7054f;}
+    
+  }
+/*
+---------------------------
+ Media Query for Responsive Device
+--------------------------------- */
+
 /* Resposible for Mobile Device */
 @media screen and (max-width:680px) {
     nav{
@@ -258,6 +290,12 @@ nav{
         grid-template-columns: repeat(1,1fr);
 
     }
+    .golden-boot .award-winer-info{
+        order: 2;
+    }
+    .golden-boot .aaward-winner-image{
+        order: 1;
+    }
     .award-winner-image img{
         width: 100%;
     }
@@ -266,6 +304,7 @@ nav{
     }
    
 }
+/* Resposible for Tablet Device */
 @media screen and (min-width:681px) and (max-width:990px) {
     nav{
         display: none;
@@ -317,7 +356,7 @@ nav{
     }
    
 }
-
+/* Resposible for Desktop Device */
 @media screen and (min-width:990px) and (max-width:1300px) {
     .top-header{
         display: grid;
