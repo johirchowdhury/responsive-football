@@ -142,6 +142,7 @@ nav{
     padding: 0px 0px 50px 0px;
 }
 
+
 .section-title{
     text-align: center;
     font-size: 40px;
@@ -203,4 +204,109 @@ nav{
     padding:10px;
     border-radius: 50%;
     margin:10px;
+}
+/* Resposible for Mobile Device */
+@media screen and (max-width:680px) {
+    nav{
+        display: none;
+    }
+    .top-header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .banner-title h1{
+        font-size: 40px;
+    }
+    .player-img img{
+        width: 100%;
+    }
+    .banner-details{
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .player-img img{
+        width: 100%;
+    }
+    .copa-highlights{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights-details, .award-winer-info{
+        text-align: center;
+        width: 100%;
+    }
+    .highlights-banner img{
+        width: 100%;
+    }
+    .golden-ball, .golden-boot, .golden-graves{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+   
+}
+@media screen and (min-width:681px) and (max-width:990px) {
+    nav{
+        display: none;
+    }
+    .top-header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .banner-title h1{
+        font-size: 40px;
+    }
+    .banner-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner-details{
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .player-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .copa-highlights{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights-details, .award-winer-info{
+        text-align: center;
+        width: 100%;
+    }
+    .highlights-banner img{
+        width: 100%;
+    }
+    .golden-ball, .golden-boot, .golden-graves{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+
+    }
+   
+}
+
+@media screen and (min-width:990px) and (max-width:1400px) {
+    .top-header{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .player-img img{
+        width: 100%;
+    }
 }
