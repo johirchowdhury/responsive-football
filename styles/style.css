@@ -12,9 +12,51 @@ body{
 
 
 /* Top Header Section */
+header {
+    background-color: #2D25A0;
+    animation: head-bg 5s linear  2s infinite alternate;
+  }
+  
+  @keyframes head-bg {
+    from {background-color: #2D25A0;}
+    to {background-color: rgb(220, 97, 231);}
+  }
 header{
     background-color: #2D25A0;
 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0px;
+}
+.main-menu{
+    margin: 0px;
+}
+.main-menu ul{
+    list-style: none;
+    margin: 0px;
+}
+.main-menu ul li{
+    display: inline-block;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    color:white;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.login-btn a{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.fas.fa-sign-in-alt{
+    padding-right: 8px;
 }
 .top-header{
     display: flex;
@@ -95,6 +137,54 @@ header{
     height: 427px;
 }
 
+/* Copa america 2021 award */
+.copa-america-award{
+    padding: 0px 0px 50px 0px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.golden-ball, .golden-boot, .golden-graves{
+    display: flex;
+    justify-content: space-between;
+    padding:50px 0px;
+
+}
+.award-winner-image{
+    padding:15px;
+    box-shadow: 0px 0px 30px #cac9c9;
+    background-color: lightpink;
+
+}
+.award-winner-image img{
+    width: 300px;
+    height: 256px;
+    
+
+    
+}
+.award-winer-info{
+    width: 45%;
+}
+.award-winer-info h3{
+    font-size: 35px;
+    margin: 0px;
+    color: blueviolet;
+    font-weight: 800;
+}
+.award-winer-info h4{
+    margin: 0px;
+    font-size: 30px;
+    color: coral;
+}
+.award-winer-info p{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+}
 
 /* footer section */
 .footer{
